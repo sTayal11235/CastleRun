@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class check02 : MonoBehaviour
+public class CharAnimationSync : MonoBehaviour
 {
     float speed = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,6 @@ public class check02 : MonoBehaviour
     {
         if (IdleRunDelay.IsTime && gameObject.transform.localRotation.y > 0)
         {
-            Debug.Log("UDC_CHAR");
-            Debug.Log(Time.time);
             transform.Rotate(0, -10, 0);
         }
     }
