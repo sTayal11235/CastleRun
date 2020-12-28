@@ -16,15 +16,15 @@ public class cameraCutScene : MonoBehaviour
     {
         if(IdleRunDelay.CameraSwapTime)
         {
-            float smoothX = Mathf.SmoothDamp(transform.position.x, cameraPos.transform.position.x, ref cv, smoothSpeed);
-            float smoothY = Mathf.SmoothDamp(transform.position.y, cameraPos.transform.position.y, ref cv, smoothSpeed);
-            float smoothZ = Mathf.SmoothDamp(transform.position.z, cameraPos.transform.position.z, ref cv, smoothSpeed);
+            float smoothX = Mathf.SmoothDamp(transform.localPosition.x, cameraPos.transform.localPosition.x, ref cv, smoothSpeed);
+            float smoothY = Mathf.SmoothDamp(transform.localPosition.y, cameraPos.transform.localPosition.y, ref cv, smoothSpeed);
+            float smoothZ = Mathf.SmoothDamp(transform.localPosition.z, cameraPos.transform.localPosition.z, ref cv, smoothSpeed);
             
             transform.position = new Vector3(smoothX, smoothY, smoothZ);
 
-            float smoothAX = Mathf.SmoothDampAngle(transform.eulerAngles.x, cameraPos.transform.eulerAngles.x, ref cv, smoothAngle);
-            float smoothAY = Mathf.SmoothDampAngle(transform.eulerAngles.y, cameraPos.transform.eulerAngles.y, ref cv, smoothAngle);
-            float smoothAZ = Mathf.SmoothDampAngle(transform.eulerAngles.z, cameraPos.transform.eulerAngles.z, ref cv, smoothAngle);
+            float smoothAX = Mathf.SmoothDampAngle(transform.localRotation.x, cameraPos.transform.localRotation.x, ref cv, smoothAngle);
+            float smoothAY = Mathf.SmoothDampAngle(transform.localRotation.y, cameraPos.transform.localRotation.y, ref cv, smoothAngle);
+            float smoothAZ = Mathf.SmoothDampAngle(transform.localRotation.z, cameraPos.transform.localRotation.z, ref cv, smoothAngle);
             
             transform.rotation = Quaternion.Euler(smoothAX, smoothAY, smoothAZ);
             

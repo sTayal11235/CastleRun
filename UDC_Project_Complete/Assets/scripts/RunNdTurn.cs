@@ -28,7 +28,6 @@ public class RunNdTurn : MonoBehaviour
     void Update()
     {
         
-        //Quaternion rotateMyCharacter = Quaternion.Euler(0, rotationAngleY, 0);
         if(Input.GetKeyDown(KeyCode.D))
         {
             myCharacter.velocity = new Vector3(0, 0, 0);
