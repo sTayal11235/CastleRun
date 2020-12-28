@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraFollow : MonoBehaviour
+public class cameraCutScene : MonoBehaviour
 {
     [SerializeField]
     Transform cameraPos;
@@ -11,19 +11,13 @@ public class cameraFollow : MonoBehaviour
     float smoothSpeed = 0.05f;
     float smoothAngle = 0.05f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        gameObject.AddComponent<IdleRunDelay>();
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {
         if(IdleRunDelay.CameraSwapTime)
         {
-            float smoothY = Mathf.SmoothDamp(transform.position.y, cameraPos.transform.position.y, ref cv, smoothSpeed);
             float smoothX = Mathf.SmoothDamp(transform.position.x, cameraPos.transform.position.x, ref cv, smoothSpeed);
+            float smoothY = Mathf.SmoothDamp(transform.position.y, cameraPos.transform.position.y, ref cv, smoothSpeed);
             float smoothZ = Mathf.SmoothDamp(transform.position.z, cameraPos.transform.position.z, ref cv, smoothSpeed);
             
             transform.position = new Vector3(smoothX, smoothY, smoothZ);

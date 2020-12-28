@@ -18,8 +18,7 @@ public class RunNdTurn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        runSpeed = new Vector3(0, -5.0f, speed);
-        gameObject.GetComponent<RunTimeKeeper>().enabled = false;
+        runSpeed = new Vector3(0.0f, -8.0f, speed);
         myCharacter = GetComponent<Rigidbody>();
         gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         rotationAngleY = 0.0f;
@@ -61,23 +60,23 @@ public class RunNdTurn : MonoBehaviour
     {
         if(myCharacter.rotation.eulerAngles.y >= 85 && myCharacter.rotation.eulerAngles.y < 95)
         {
-            runSpeed = new Vector3(speed, - 5.0f, 0.0f);            
+            runSpeed = new Vector3(speed, - 8.0f, 0.0f);            
             Debug.Log("X");
         }
 
         else if(myCharacter.rotation.eulerAngles.y >= 175 && myCharacter.rotation.eulerAngles.y < 185)
         {
-            runSpeed = new Vector3(0.0f, -5.0f, -1 * speed);
+            runSpeed = new Vector3(0.0f, -8.0f, -1 * speed);
             Debug.Log("-Z");
         }
         else if(myCharacter.rotation.eulerAngles.y >= 265 && myCharacter.rotation.eulerAngles.y < 275)
         {
-            runSpeed = new Vector3(-1 * speed, -5.0f, 0.0f);
+            runSpeed = new Vector3(-1 * speed, -8.0f, 0.0f);
             Debug.Log("-X");
         }
         else
         {
-            runSpeed = new Vector3(0.0f, -5.0f, speed);
+            runSpeed = new Vector3(0.0f, -8.0f, speed);
             Debug.Log("Z");
         }
 

@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class RunTimeKeeper : MonoBehaviour
 {
-    // Update is called once per frame
+
+    // FixedUpdate is called 50 times per second
     void FixedUpdate()
     {
         if(IdleRunDelay.ShouldRun)
         {
-            gameObject.GetComponent<CharAnimationSync>().enabled = false;
+            Destroy(gameObject.GetComponent<CharAnimationSync>());
             gameObject.GetComponent<RunNdTurn>().enabled = true;
+            Destroy(this);
         }
     }
 }

@@ -25,7 +25,7 @@ public class IdleRunDelay : MonoBehaviour
             isTime3s = true;
         }
 
-        if(updateTime >= 3.5f)
+        if(updateTime >= 2.8f)
         {
             cameraSwap = true;
         }
