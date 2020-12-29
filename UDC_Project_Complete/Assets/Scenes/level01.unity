@@ -859,7 +859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCharacter: {fileID: 1816896205}
   speed: 25
-  jumpVel: 10
+  jumpVel: 7.5
 --- !u!114 &1816896211
 MonoBehaviour:
   m_ObjectHideFlags: 0
