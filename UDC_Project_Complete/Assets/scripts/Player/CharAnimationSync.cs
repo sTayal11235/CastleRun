@@ -16,7 +16,7 @@ public class CharAnimationSync : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (IdleRunDelay.IsTime && count != 0)
+        if (TimeKeeper.IsTime && count != 0)
         {
             transform.Rotate(0, -10, 0);
             count -= 1;

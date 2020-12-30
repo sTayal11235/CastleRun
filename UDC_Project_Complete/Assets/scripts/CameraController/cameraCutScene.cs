@@ -14,7 +14,7 @@ public class cameraCutScene : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(IdleRunDelay.CameraSwapTime)
+        if(TimeKeeper.CameraSwapTime)
         {
             float smoothX = Mathf.SmoothDamp(transform.localPosition.x, cameraPos.transform.localPosition.x, ref cv, smoothSpeed);
             float smoothY = Mathf.SmoothDamp(transform.localPosition.y, cameraPos.transform.localPosition.y, ref cv, smoothSpeed);

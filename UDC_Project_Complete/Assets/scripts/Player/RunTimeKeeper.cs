@@ -8,7 +8,7 @@ public class RunTimeKeeper : MonoBehaviour
     // FixedUpdate is called 50 times per second
     void FixedUpdate()
     {
-        if(IdleRunDelay.ShouldRun)
+        if(TimeKeeper.ShouldRun)
         {
             Destroy(gameObject.GetComponent<CharAnimationSync>());
             gameObject.GetComponent<RunNdTurn>().enabled = true;

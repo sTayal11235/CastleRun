@@ -13,7 +13,7 @@ public class CameraComponentManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(IdleRunDelay.ShouldRun)
+        if(TimeKeeper.ShouldRun)
         {
             Destroy(gameObject.GetComponent<cameraCutScene>());
             gameObject.GetComponent<CameraFollower>().enabled = true;

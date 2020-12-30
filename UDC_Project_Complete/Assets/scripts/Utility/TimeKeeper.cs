@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleRunDelay : MonoBehaviour
+public class TimeKeeper : MonoBehaviour
 {
     float updateTime = 0.0f;
     float jumpTimer = 0.0f;
@@ -31,13 +31,13 @@ public class IdleRunDelay : MonoBehaviour
         {
             isTime3s = true;
         }
-
-        if(updateTime >= 2.8f)
+        
+        if(updateTime >= 3.65f)
         {
             cameraSwap = true;
         }
 
-        if(updateTime >= 4.0f)
+        if(updateTime >= 3.5f)
         {
             shouldRun = true;
         }

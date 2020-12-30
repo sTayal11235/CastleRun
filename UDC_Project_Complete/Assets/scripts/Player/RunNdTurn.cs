@@ -14,12 +14,12 @@ public class RunNdTurn : MonoBehaviour
     Vector3 runSpeed;
 
     float rotationAngleY;
-    float noJumpDuration = 0.0f;
+    static float noJumpDuration = 0.0f;
 
     [SerializeField]
     float jumpVel;
 
-    
+    public static float NoJumpDuration { get { return noJumpDuration; } }
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +54,7 @@ public class RunNdTurn : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && noJumpDuration >= 0.65f)
         {
-            IdleRunDelay.PlayerJumped();
+            TimeKeeper.PlayerJumped();
             Jump();
             noJumpDuration = 0.0f;
         }
@@ -64,7 +64,7 @@ public class RunNdTurn : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(!IdleRunDelay.JumpedTimerStarted && IdleRunDelay.JumpedTimerEnded)
+        if(!TimeKeeper.JumpedTimerStarted && TimeKeeper.JumpedTimerEnded)
         {
             if (myCharacter.rotation.eulerAngles.y >= 85 && myCharacter.rotation.eulerAngles.y < 95)
             {
