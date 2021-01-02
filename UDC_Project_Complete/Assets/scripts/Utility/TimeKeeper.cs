@@ -11,7 +11,19 @@ public class TimeKeeper : MonoBehaviour
     static bool shouldRun = false;
     static bool jumpedTimerStarted = false;
     static bool jumpedTimerEnded = true;
-    //This Property returns the value of isTime3s private variable
+
+
+    private void Awake()
+    {
+        updateTime = 0.0f;
+        jumpTimer = 0.0f;
+        isTime3s = false;
+        cameraSwap = false;
+        shouldRun = false;
+        jumpedTimerStarted = false;
+        jumpedTimerEnded = true;
+    }
+
     public static bool IsTime { get{ return isTime3s; } }
 
     public static bool CameraSwapTime { get { return cameraSwap; } }

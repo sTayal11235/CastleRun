@@ -48,11 +48,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _ReflDistort: 0.47
-    - _RefrDistort: 0.4
-    - _WaveScale: 0.133
+    - _ReflDistort: 0.359
+    - _RefrDistort: 0.28
+    - _WaveScale: 0.025
     m_Colors:
-    - WaveSpeed: {r: 9, g: 4.5, b: -8, a: -3.5}
+    - WaveSpeed: {r: 18, g: 9, b: -16, a: -7}
     - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
     - _Fresnel_ST: {r: 1, g: 1, b: 0, a: 0}
     - _HorizonColor: {r: 0.13575952, g: 0.22810712, b: 0.3810788, a: 0}
@@ -60,7 +60,7 @@ Material:
     - _ReflectionTex_ST: {r: 1, g: 1, b: 0, a: 0}
     - _ReflectiveColorCube_ST: {r: 1, g: 1, b: 0, a: 0}
     - _ReflectiveColor_ST: {r: 1, g: 1, b: 0, a: 0}
-    - _RefrColor: {r: 0.41006586, g: 0.9108851, b: 0.9150943, a: 1}
+    - _RefrColor: {r: 0, g: 0.70137984, b: 0.8018868, a: 1}
     - _RefractionTex_ST: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!1002 &2100001

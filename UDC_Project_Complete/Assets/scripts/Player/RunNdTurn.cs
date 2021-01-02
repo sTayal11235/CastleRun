@@ -96,6 +96,6 @@ public class RunNdTurn : MonoBehaviour
     {
         float runX = runSpeed.x;
         float runZ = runSpeed.z;
-        myCharacter.velocity = new Vector3(runX * 0.75f, jumpVel, runZ * 0.75f);
+        myCharacter.velocity = new Vector3(runX * 0.5f, jumpVel, runZ * 0.5f);
     }
 }

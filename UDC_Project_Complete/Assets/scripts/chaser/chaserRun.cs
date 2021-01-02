@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class chaserRun : MonoBehaviour
 {
-    [SerializeField] float speed = 25.0f;
+    [SerializeField] float speed;
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if(!TimeKeeper.ShouldRun)
         {
-            transform.Translate(0.0f, 0.0f, speed);
+            transform.Translate(0.0f, 0.0f, speed * Time.deltaTime);
         }
 
         else
