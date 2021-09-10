@@ -21,4 +21,4 @@
 * Main Game
 > Text to be inserted...
 
-###### The packaging of the game was done through NSIS software.
+###### The setup.exe was created using NSIS software.
