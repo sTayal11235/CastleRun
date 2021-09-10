@@ -16,9 +16,9 @@
 ###### Above Project implements a 2 scene game below are the descriptions of each scene.
 
 * Menu
-> > This is the first scene in the game. It implements the base menu of the game using the canvas system in unity and a basic MouseButtonClick event handler. It contains basic functionalities like Play, Controls and Quit.
+> This is the first scene in the game. It implements the base menu of the game using the canvas system in unity and a basic MouseButtonClick event handler. It contains basic functionalities like Play, Controls and Quit.
 
 * Main Game
-> > Text to be inserted...
+> Text to be inserted...
 
 ###### The packaging of the game was done through NSIS software.
