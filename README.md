@@ -6,3 +6,7 @@
 
 #### Languages and Tools Used :
 * Unity Game Engine
+* Blender3D
+* Make Human
+* C#
+* Visual Studio
